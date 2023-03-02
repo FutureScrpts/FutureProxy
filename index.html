@@ -53,6 +53,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const url = input.value;
   const proxyUrl = `https://cors-anywhere.herokuapp.com/${url}`;
+  const headers = { 'Origin': 'https://futurescrpts.github.io/FutureProxy/' };
   frame.src = proxyUrl;
 });
     </script>
